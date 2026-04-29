@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* CENTER LOGIN */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  color: white;
+}
+
+/* LOGIN */
+.login-box {
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #00f2fe;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* DASHBOARD */
+body {
+  display: flex;
+  background: #0f172a;
+  color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  padding: 20px;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+}
