@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar" id="sidebar">
+  <h2>⚡ Admin</h2>
+  <ul>
+    <li class="active">Dashboard</li>
+    <li>Users</li>
+    <li>Payments</li>
+    <li onclick="logout()">Logout</li>
+  </ul>
+</div>
+
+<div class="main">
+
+  <div class="navbar">
+    <button onclick="toggleSidebar()">☰</button>
+    <button onclick="toggleDark()">🌙</button>
+  </div>
+
+  <div class="cards">
+    <div class="card glass">
+      <h4>Total Registration</h4>
+      <h2 id="total">0</h2>
+    </div>
+
+    <div class="card glass">
+      <h4>New Registration</h4>
+      <h2 id="new">0</h2>
+    </div>
+
+    <div class="card glass">
+      <h4>Payment Confirmed</h4>
+      <h2 id="payment">0</h2>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
